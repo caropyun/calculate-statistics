@@ -1,0 +1,349 @@
+Sample Run 1 -------------------------------------------------------------------------------
+STEM Center Temperature Project
+Carolyn Pyun
+
+Main Menu
+---------
+1 - Process a new data file
+2 - Choose units
+3 - Edit room filter
+4 - Show summary statistics
+5 - Show temperature by date and time
+6 - Show histogram of temperatures
+7 - Quit
+The average temperature is None
+Enter [1-7] for the menu option you would like to select:
+4
+Please load data file and make sure at least one sensor is active.
+
+Main Menu
+---------
+1 - Process a new data file
+2 - Choose units
+3 - Edit room filter
+4 - Show summary statistics
+5 - Show temperature by date and time
+6 - Show histogram of temperatures
+7 - Quit
+The average temperature is None
+Enter [1-7] for the menu option you would like to select:
+1
+Please enter the path and file name of the new dataset: resources/Temperatures_0806.csv
+Loaded 11724 samples.
+Enter a 3-20 character name for the data: Test Week
+
+Main Menu
+---------
+1 - Process a new data file
+2 - Choose units
+3 - Edit room filter
+4 - Show summary statistics
+5 - Show temperature by date and time
+6 - Show histogram of temperatures
+7 - Quit
+The average temperature is 20.45544117647059
+Enter [1-7] for the menu option you would like to select:
+4
+Summary statistics for Test Week
+Minimum Temperature: 16.55 C
+Maximum Temperature: 28.42 C
+Average Temperature: 21.47 C
+
+Main Menu
+---------
+1 - Process a new data file
+2 - Choose units
+3 - Edit room filter
+4 - Show summary statistics
+5 - Show temperature by date and time
+6 - Show histogram of temperatures
+7 - Quit
+The average temperature is 20.45544117647059
+Enter [1-7] for the menu option you would like to select:
+2
+Current units in Celsius
+Choose new units:
+0 - Celsius
+1 - Fahrenheit
+2 - Kelvin
+Which unit? [Enter 0, 1 or 2]
+1
+
+Main Menu
+---------
+1 - Process a new data file
+2 - Choose units
+3 - Edit room filter
+4 - Show summary statistics
+5 - Show temperature by date and time
+6 - Show histogram of temperatures
+7 - Quit
+The average temperature is 20.45544117647059
+Enter [1-7] for the menu option you would like to select:
+4
+Summary statistics for Test Week
+Minimum Temperature: 61.790000000000006 F
+Maximum Temperature: 83.156 F
+Average Temperature: 70.646 F
+
+Main Menu
+---------
+1 - Process a new data file
+2 - Choose units
+3 - Edit room filter
+4 - Show summary statistics
+5 - Show temperature by date and time
+6 - Show histogram of temperatures
+7 - Quit
+The average temperature is 20.45544117647059
+Enter [1-7] for the menu option you would like to select:
+3
+Called change_filter() function.
+sensor_dict = {'4201': 1, '4204': 2, '4205': 4, '4213': 0, '4218': 3, 'Out': 10}
+Printing filtered sensor list.
+4201: Foundations Lab [ACTIVE]
+4204: CS Lab [ACTIVE]
+4205: Tiled Room [ACTIVE]
+4213: STEM Center [ACTIVE]
+4218: Workshop Room [ACTIVE]
+Out: Outside [ACTIVE]
+
+Type the sensor number to toggle (e.g. 4201) or x to end: 4201
+Room 4201 found 1 in list.
+filter list = [1]
+Printing filtered sensor list.
+4201: Foundations Lab
+4204: CS Lab [ACTIVE]
+4205: Tiled Room [ACTIVE]
+4213: STEM Center [ACTIVE]
+4218: Workshop Room [ACTIVE]
+Out: Outside [ACTIVE]
+
+Type the sensor number to toggle (e.g. 4201) or x to end: 4204
+Room 4204 found 2 in list.
+filter list = [1, 2]
+Printing filtered sensor list.
+4201: Foundations Lab
+4204: CS Lab
+4205: Tiled Room [ACTIVE]
+4213: STEM Center [ACTIVE]
+4218: Workshop Room [ACTIVE]
+Out: Outside [ACTIVE]
+
+Type the sensor number to toggle (e.g. 4201) or x to end: x
+
+Main Menu
+---------
+1 - Process a new data file
+2 - Choose units
+3 - Edit room filter
+4 - Show summary statistics
+5 - Show temperature by date and time
+6 - Show histogram of temperatures
+7 - Quit
+The average temperature is 19.910638297872342
+Enter [1-7] for the menu option you would like to select:
+4
+Summary statistics for Test Week
+Minimum Temperature: 61.790000000000006 F
+Maximum Temperature: 83.156 F
+Average Temperature: 70.124 F
+
+Main Menu
+---------
+1 - Process a new data file
+2 - Choose units
+3 - Edit room filter
+4 - Show summary statistics
+5 - Show temperature by date and time
+6 - Show histogram of temperatures
+7 - Quit
+The average temperature is 19.910638297872342
+Enter [1-7] for the menu option you would like to select:
+3
+Called change_filter() function.
+sensor_dict = {'4201': 1, '4204': 2, '4205': 4, '4213': 0, '4218': 3, 'Out': 10}
+Printing filtered sensor list.
+4201: Foundations Lab
+4204: CS Lab
+4205: Tiled Room [ACTIVE]
+4213: STEM Center [ACTIVE]
+4218: Workshop Room [ACTIVE]
+Out: Outside [ACTIVE]
+
+Type the sensor number to toggle (e.g. 4201) or x to end: 4205
+Room 4205 found 4 in list.
+filter list = [4]
+Printing filtered sensor list.
+4201: Foundations Lab
+4204: CS Lab
+4205: Tiled Room
+4213: STEM Center [ACTIVE]
+4218: Workshop Room [ACTIVE]
+Out: Outside [ACTIVE]
+
+Type the sensor number to toggle (e.g. 4201) or x to end: 4213
+Room 4213 found 0 in list.
+filter list = [4, 0]
+Printing filtered sensor list.
+4201: Foundations Lab
+4204: CS Lab
+4205: Tiled Room
+4213: STEM Center
+4218: Workshop Room [ACTIVE]
+Out: Outside [ACTIVE]
+
+Type the sensor number to toggle (e.g. 4201) or x to end: 4218
+Room 4218 found 3 in list.
+filter list = [4, 0, 3]
+Printing filtered sensor list.
+4201: Foundations Lab
+4204: CS Lab
+4205: Tiled Room
+4213: STEM Center
+4218: Workshop Room
+Out: Outside [ACTIVE]
+
+Type the sensor number to toggle (e.g. 4201) or x to end: Out
+Room Out found 10 in list.
+filter list = [4, 0, 3, 10]
+Printing filtered sensor list.
+4201: Foundations Lab
+4204: CS Lab
+4205: Tiled Room
+4213: STEM Center
+4218: Workshop Room
+Out: Outside
+
+Type the sensor number to toggle (e.g. 4201) or x to end: x
+
+Main Menu
+---------
+1 - Process a new data file
+2 - Choose units
+3 - Edit room filter
+4 - Show summary statistics
+5 - Show temperature by date and time
+6 - Show histogram of temperatures
+7 - Quit
+The average temperature is None
+Enter [1-7] for the menu option you would like to select:
+4
+Please load data file and make sure at least one sensor is active.
+
+Main Menu
+---------
+1 - Process a new data file
+2 - Choose units
+3 - Edit room filter
+4 - Show summary statistics
+5 - Show temperature by date and time
+6 - Show histogram of temperatures
+7 - Quit
+The average temperature is None
+Enter [1-7] for the menu option you would like to select:
+7
+Thank you for using the STEM Center Temperature Project
+
+Process finished with exit code 0
+
+Sample Run 2 --------------------------------------------------------------------------------
+STEM Center Temperature Project
+Carolyn Pyun
+
+Main Menu
+---------
+1 - Process a new data file
+2 - Choose units
+3 - Edit room filter
+4 - Show summary statistics
+5 - Show temperature by date and time
+6 - Show histogram of temperatures
+7 - Quit
+The average temperature is None
+Enter [1-7] for the menu option you would like to select:
+2
+Current units in Celsius
+Choose new units:
+0 - Celsius
+1 - Fahrenheit
+2 - Kelvin
+Which unit? [Enter 0, 1 or 2]
+43
+Please choose a unit from the list.
+Choose new units:
+0 - Celsius
+1 - Fahrenheit
+2 - Kelvin
+Which unit? [Enter 0, 1 or 2]
+a
+Error: Invalid input. Enter a number only.
+Choose new units:
+0 - Celsius
+1 - Fahrenheit
+2 - Kelvin
+Which unit? [Enter 0, 1 or 2]
+0
+
+Main Menu
+---------
+1 - Process a new data file
+2 - Choose units
+3 - Edit room filter
+4 - Show summary statistics
+5 - Show temperature by date and time
+6 - Show histogram of temperatures
+7 - Quit
+The average temperature is None
+Enter [1-7] for the menu option you would like to select:
+2
+Current units in Celsius
+Choose new units:
+0 - Celsius
+1 - Fahrenheit
+2 - Kelvin
+Which unit? [Enter 0, 1 or 2]
+1
+
+Main Menu
+---------
+1 - Process a new data file
+2 - Choose units
+3 - Edit room filter
+4 - Show summary statistics
+5 - Show temperature by date and time
+6 - Show histogram of temperatures
+7 - Quit
+The average temperature is None
+Enter [1-7] for the menu option you would like to select:
+2
+Current units in Fahrenheit
+Choose new units:
+0 - Celsius
+1 - Fahrenheit
+2 - Kelvin
+Which unit? [Enter 0, 1 or 2]
+6666
+Please choose a unit from the list.
+Choose new units:
+0 - Celsius
+1 - Fahrenheit
+2 - Kelvin
+Which unit? [Enter 0, 1 or 2]
+1
+
+Main Menu
+---------
+1 - Process a new data file
+2 - Choose units
+3 - Edit room filter
+4 - Show summary statistics
+5 - Show temperature by date and time
+6 - Show histogram of temperatures
+7 - Quit
+The average temperature is None
+Enter [1-7] for the menu option you would like to select:
+7
+Thank you for using the STEM Center Temperature Project
+
+Process finished with exit code 0
